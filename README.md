@@ -1,14 +1,14 @@
 # LacreiSaudeVoluntariado
 
-#Validar cenários de teste da aplicação “Lacrei Saúde” usando vários tipos de teste, com linguagem Gherkin  
-##CT01: Cadastro da pessoa usuária. 
-###Cenário 1: Como usuário ainda não cadastrado, eu quero criar uma conta (fluxo principal). 
--Given: O usuario esta na tela de login 
--And: clica no botão "criar conta" 
--When: Quando ele preencher os campos com dados validos 
--And: aceita os termos de uso e confirma tem 18 anos o mais 
--And: clica em "Cadastrar" e mostra a tela informando o envio do link de verificação 
--Then: E possível verificar o link no email e acessar na tela principal para continuar o cadastro 
+# Validar cenários de teste da aplicação “Lacrei Saúde” usando vários tipos de teste, com linguagem Gherkin  
+## CT01: Cadastro da pessoa usuária. 
+### Cenário 1: Como usuário ainda não cadastrado, eu quero criar uma conta (fluxo principal). 
+- Given: O usuario esta na tela de login 
+- And: clica no botão "criar conta" 
+- When: Quando ele preencher os campos com dados validos 
+- And: aceita os termos de uso e confirma tem 18 anos o mais 
+- And: clica em "Cadastrar" e mostra a tela informando o envio do link de verificação 
+- Then: E possível verificar o link no email e acessar na tela principal para continuar o cadastro 
 
 Evidencias:  
 
@@ -19,7 +19,7 @@ Evidencias:
 -And: aceita os termos de uso e confirma tem 18 anos o mais 
 -Then: mostra o campo com erro e não permite finalizar o cadastro 
 
-###Cenário 3 : Como usuário ainda não cadastrado, eu quero criar uma conta com dados validos mas não aceito os termos (cenario alternativo). 
+### Cenário 3 : Como usuário ainda não cadastrado, eu quero criar uma conta com dados validos mas não aceito os termos (cenario alternativo). 
 -Given: O usuario esta na tela de login 
 -And: clica no botão "criar conta" 
 -When : Quando ele preencher os campos com dados validos 
