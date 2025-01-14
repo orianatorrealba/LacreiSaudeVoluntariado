@@ -1,6 +1,43 @@
 # LacreiSaudeVoluntariado
+## Requirements:
+    -Antes de começar, certifique-se de que o seu sistema atende aos requisitos mínimos para rodar o Android Studio. Abaixo estão os requisitos gerais para as principais plataformas:
+	•	Windows:
+	•	Windows 10 ou superior (64 bits)
+	•	Mínimo de 8 GB de RAM (recomendado: 16 GB ou mais)
+	•	4 GB de espaço livre no disco (recomendado: SSD)
+	•	Resolução mínima de 1280 x 800
+	•	Java Development Kit (JDK) incluído no Android Studio
 
-# Validar cenários de teste da aplicação “Lacrei Saúde” usando vários tipos de teste, com linguagem Gherkin  
+## Installation Instructions:
+    1.	Acesse o site oficial do Android Studio: https://developer.android.com/studio.
+	2.	Clique no botão Download Android Studio.
+	3.	Leia e aceite os termos de licença.
+	4.	Baixe o instalador compatível com o seu sistema operacional.
+
+## Configure o Android Virtual Device (AVD):
+1.	Abra o AVD Manager:
+	•	No Android Studio, clique em Tools > Device Manager (ou no ícone de dispositivo na barra de ferramentas superior).
+2.	Crie um novo dispositivo virtual:
+	•	Clique em Create Device.
+	•	Escolha o tipo de dispositivo (por exemplo, Pixel 6, Tablet, etc.) e clique em Next.
+	•	Selecione uma imagem do sistema (versão do Android) para o emulador:
+	•	Se necessário, faça o download da versão desejada clicando em Download ao lado da imagem.
+	•	Configure outras opções, como resolução e tamanho do disco, se necessário.
+	•	Clique em Finish para salvar o dispositivo virtual.
+3. Inicie o Emulador
+	•	No Device Manager, localize o AVD que você criou.
+	•	Clique no botão Play (ícone de triângulo verde) ao lado do dispositivo.
+	•	O emulador será iniciado em uma janela separada.
+4. Execute o Projeto no Emulador
+	1.	No Android Studio, abra ou crie um projeto.
+	2.	Certifique-se de que o AVD está iniciado e ativo.
+	3.	Clique no botão Run (ícone de triângulo verde) na barra superior.
+	4.	Escolha o emulador como o dispositivo de execução.
+	5.	O aplicativo será instalado e executado no emulador.
+
+
+# Documentação dos casos de teste:
+## Validar cenários de teste da aplicação “Lacrei Saúde” usando vários tipos de teste, com linguagem Gherkin  
 ## CT01: Cadastro da pessoa usuária. 
 ### Cenário 1: Como usuário ainda não cadastrado, eu quero criar uma conta (fluxo principal). 
 - Given: O usuario esta na tela de login 
@@ -56,3 +93,12 @@ Evidencias:
 - And: clica no opção "esqueci minha senha" 
 - When: preencho o email valido e clico em "enviar link" 
 - Then: e possível redefinir a senha via link enviado no email e acessar novamente na tela principal 
+
+# Testes de acessibilidade:
+### Cenário 1: Como usuário ainda não cadastrado, eu quero criar uma conta (fluxo principal). 
+- Given: O usuario esta na tela de login 
+- And: clica no botão "criar conta" 
+- When: Quando ele preencher os campos com dados validos 
+- And: aceita os termos de uso e confirma tem 18 anos o mais 
+- And: clica em "Cadastrar" e mostra a tela informando o envio do link de verificação 
+- Then: E possível verificar o link no email e acessar na tela principal para continuar o cadastro 
